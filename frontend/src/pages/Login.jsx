@@ -57,7 +57,7 @@ const Login = () => {
 		<>
 			<section className='heading'>
 				<h1>
-					<FaSignInAlt /> Login
+					<FaSignInAlt className='blue' /> Login
 				</h1>
 				<p>Login and start setting your goals</p>
 			</section>
@@ -65,13 +65,32 @@ const Login = () => {
 			<section className='form'>
 				<form onSubmit={onSubmit}>
 					<div className='form-group'>
-						<input className='form-control' type='email' name='email' id='email' value={email} placeholder='Enter your email' onChange={onChange} />
+						<input
+							className='form-control'
+							type='email'
+							name='email'
+							id='email'
+							value={email}
+							placeholder='Enter your email'
+							onChange={onChange}
+						/>
 					</div>
 					<div className='form-group'>
-						<input className='form-control' type='password' name='password' id='password' value={password} placeholder='Enter your password' onChange={onChange} />
+						<input
+							className='form-control'
+							type='password'
+							name='password'
+							id='password'
+							value={password}
+							placeholder='Enter your password'
+							onChange={onChange}
+						/>
 					</div>
 					<div className='form-group'>
-						<button className='btn btn-block' type='submit'>
+						<button
+							className='btn btn-block'
+							type='submit'
+						>
 							Login
 						</button>
 					</div>

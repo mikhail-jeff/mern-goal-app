@@ -64,7 +64,7 @@ const Register = () => {
 		<>
 			<section className='heading'>
 				<h1>
-					<FaUser /> Register
+					<FaUser className='blue' /> Register
 				</h1>
 				<p>Create an account</p>
 			</section>
@@ -72,19 +72,54 @@ const Register = () => {
 			<section className='form'>
 				<form onSubmit={onSubmit}>
 					<div className='form-group'>
-						<input className='form-control' type='text' name='name' id='name' value={name} placeholder='Enter your name' onChange={onChange} />
+						<input
+							className='form-control'
+							type='text'
+							name='name'
+							id='name'
+							value={name}
+							placeholder='Enter your name'
+							onChange={onChange}
+						/>
 					</div>
 					<div className='form-group'>
-						<input className='form-control' type='email' name='email' id='email' value={email} placeholder='Enter your email' onChange={onChange} />
+						<input
+							className='form-control'
+							type='email'
+							name='email'
+							id='email'
+							value={email}
+							placeholder='Enter your email'
+							onChange={onChange}
+						/>
 					</div>
 					<div className='form-group'>
-						<input className='form-control' type='password' name='password' id='password' value={password} placeholder='Enter your password' onChange={onChange} />
+						<input
+							className='form-control'
+							type='password'
+							name='password'
+							id='password'
+							value={password}
+							placeholder='Enter your password'
+							onChange={onChange}
+						/>
 					</div>
 					<div className='form-group'>
-						<input className='form-control' type='password' name='password2' id='password2' value={password2} placeholder='Confirm password' onChange={onChange} />
+						<input
+							className='form-control'
+							type='password'
+							name='password2'
+							id='password2'
+							value={password2}
+							placeholder='Confirm password'
+							onChange={onChange}
+						/>
 					</div>
 					<div className='form-group'>
-						<button className='btn btn-block' type='submit'>
+						<button
+							className='btn btn-block'
+							type='submit'
+						>
 							Register
 						</button>
 					</div>
